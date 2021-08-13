@@ -152,7 +152,7 @@ while run:
                 walls.remove(w5)
                 walls.remove(w6)
                 walls.remove(w7)
-                '''
+                
             if sprite.collide_rect(hero,enemy) or sprite.collide_rect(hero,enemy2):
                 finish = True
                 img2 = image.load("game-over-3.jpg") 
@@ -163,7 +163,7 @@ while run:
                 img2 = image.load("game-over-3.jpg") 
                 window.fill((255,255,255))
                 window.blit(transform.scale(img2, (win_width,win_height)),(0,0))
-            '''
+            
             display.update() 
         if level == 2:
             for w in walls2:
